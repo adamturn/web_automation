@@ -6,7 +6,7 @@
 # 	3. check if __name__ == "__main__", make sure it's only running main()
 # 	4. You're all set!!
 
-# built-in
+# standard library
 import os
 import re
 import sys
@@ -15,12 +15,12 @@ import logging
 import smtplib
 from email.message import EmailMessage
 from datetime import datetime
-# local
-import conndb
-import download_bot
-# external
+# third-party
 import pandas as pd
 from sqlalchemy import create_engine
+# first-party
+import conndb
+import download_bot
 
 
 def send_log_email(log_file_name):
