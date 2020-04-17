@@ -15,6 +15,9 @@ from selenium.webdriver.support import expected_conditions as ec
 
 def main(random_wait_base=1):
     """'Scraper' subprocess: downloads .csv files from client.
+    
+    Arguments:
+        random_wait_base (int): defines the base wait time for each random wait.
 
     Returns:
         str: path to directory that will house any downloaded .csv files.
